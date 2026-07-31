@@ -4,7 +4,7 @@ Personal portfolio for **Himanshu Singh Yadav** — AI/ML Engineer & Full-Stack 
 
 Built with Next.js 16, React 19, TypeScript, Tailwind CSS 4, and shadcn/ui.
 
-🌐 **Live:** [himanshu-personal-portfolio.vercel.app](https://himanshu-personal-portfolio.vercel.app/)
+🌐 **Live:** [himanshu--portfolio.vercel.app](https://himanshu--portfolio.vercel.app/)
 
 ---
 
