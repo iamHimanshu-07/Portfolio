@@ -31,7 +31,7 @@
 ## 🌐 Live Deployment
 
 ### Production URLs
-- **Primary:** https://himanshu-personal-portfolio.vercel.app
+- **Primary:** https://himanshu--portfolio.vercel.app
 - **Underlying deployment:** https://portfolio-website-eg6jjm3z4-itshimanshu666-6415s-projects.vercel.app
 - **Legacy:** https://v0-portfolio-website-brown-three.vercel.app
 
