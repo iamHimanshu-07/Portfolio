@@ -5,15 +5,15 @@ import { Button } from "@/components/ui/button"
 
 export function Hero() {
   return (
-    <section id="about" className="min-h-screen flex items-center pt-20">
+    <section id="about" className="min-h-screen flex items-center pt-12 lg:pt-10">
       <div className="mx-auto max-w-7xl px-6 lg:px-8 py-24 lg:py-32">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 items-center">
-          <div className="space-y-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-16 items-center">
+          <div className="space-y-6">
             <div className="space-y-4">
               <p className="text-primary font-semibold tracking-wide uppercase text-sm">
                 AI/ML Engineer & Full-Stack Developer
               </p>
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight text-balance flex flex-col gap-2">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight text-balance flex flex-col gap-1">
                 Hi, I&apos;m <span className="text-primary">Himanshu Singh Yadav</span>
                 <div className="flex items-center gap-2 w-fit">
                   <span className="relative flex h-2 w-2">
@@ -26,7 +26,7 @@ export function Hero() {
               <p className="text-lg text-muted-foreground leading-relaxed max-w-xl">
                 A passionate AI/ML enthusiast and full-stack developer from Surat, Gujarat.
                 I specialize in building intelligent applications using Machine Learning, Deep Learning, 
-                and modern web technologies. Currently pursuing B.Tech in AI & ML.
+                and modern web technologies. Currently, pursuing my B.Tech in AI & ML from P. P. Savani University.
               </p>
             </div>
 
@@ -36,7 +36,7 @@ export function Hero() {
                   <Eye className="mr-2 h-4 w-4" />
                   View Resume
                 </Link>
-              </Button>
+              </Button> 
             </div>
 
             <div className="flex flex-wrap gap-4">
@@ -111,7 +111,7 @@ export function Hero() {
                     height={480}
                     className="w-full h-auto object-cover"
                     priority
-                  />
+                  />  
                   
                   {/* Overlay gradient */}
                   <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent" />
