@@ -51,33 +51,6 @@ const projects = [
     live: "#",
     image: "/images/cryptocast.png",
   },
-  {
-    title: "Movie Recommendation System",
-    description:
-      "A recommendation engine built using Item-Based Collaborative Filtering and Cosine Similarity on the MovieLens dataset (9,742 movies, 100,836 ratings, 610 users) to suggest movies based on user rating patterns.",
-    tags: ["Python", "Scikit-Learn", "Pandas", "NumPy", "Collaborative Filtering"],
-    github: "https://github.com/iamHimanshu-07/Movie-Recommendation-System",
-    live: "#",
-    image: "/images/movie-recommendation.png",
-  },
-  {
-    title: "SMS Spam Classifier",
-    description:
-      "A Machine Learning project that classifies SMS messages as Spam or Ham using NLP. Leverages TF-IDF Vectorization and Multinomial Naive Bayes to build an efficient text classification model with high detection accuracy.",
-    tags: ["Python", "NLP", "TF-IDF", "Naive Bayes", "Scikit-Learn"],
-    github: "https://github.com/iamHimanshu-07/Spam-SMS-Classifier",
-    live: "#",
-    image: "/images/spam-sms.png",
-  },
-  {
-    title: "SmartBin - AIoT Smart Dustbin",
-    description:
-      "A touch-free intelligent waste management system built with Arduino Uno, an HC-SR04 ultrasonic sensor, and a servo motor. Automatically opens the lid when a person approaches, improving hygiene for smart cities, hospitals, and public spaces.",
-    tags: ["C++", "Arduino", "IoT", "Ultrasonic Sensor", "Servo Motor"],
-    github: "https://github.com/iamHimanshu-07/SmartBin",
-    live: "#",
-    image: "/images/smartbin.png",
-  },
 ]
 
 export function Projects() {
