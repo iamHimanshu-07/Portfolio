@@ -138,7 +138,7 @@ export function Projects() {
                     <Button size="sm" asChild>
                       <Link href={project.live} target="_blank" rel="noopener noreferrer">
                         <ExternalLink className="mr-2 h-4 w-4" />
-                        Live Demo
+                        Live <span className="hidden sm:inline ml-1">Demo</span>
                       </Link>
                     </Button>
                   )}

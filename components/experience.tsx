@@ -1,5 +1,9 @@
+"use client"
+
+import { motion } from "framer-motion"
 import { Badge } from "@/components/ui/badge"
 import { Briefcase, GraduationCap, Lightbulb } from "lucide-react"
+import { cn } from "@/lib/utils"
 
 const experiences = [
   {
@@ -44,7 +48,7 @@ const experiences = [
     company: "Good Shepherd English High Secondary School",
     type: "education",
     description:
-      "Completed Secondary education with strong foundation in Mathematics and Science.\nPercentile: 83%",
+      "Completed Secondary education with strong foundation in Mathematics and Science.\\nPercentile: 83%",
     skills: ["Mathematics", "Science", "English", "Computer"],
   },
 ]
@@ -89,27 +93,35 @@ export function Experience() {
               return (
                 <div
                   key={index}
-                  className={`relative flex items-start gap-6 ${index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
-                    }`}
+                  className={cn(
+                    "relative flex items-start gap-6",
+                    index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
+                  )}
                 >
                   {/* Timeline dot */}
                   <div className="absolute left-4 md:left-1/2 transform -translate-x-1/2 z-10">
-                    <div className={`w-8 h-8 rounded-full flex items-center justify-center border-2 ${colorClass}`}>
+                    <div className={cn("w-8 h-8 rounded-full flex items-center justify-center border-2", colorClass)}>
                       <Icon className="h-4 w-4" />
                     </div>
                   </div>
 
-                  {/* Content */}
-                  <div
-                    className={`ml-16 md:ml-0 md:w-[calc(50%-2rem)] ${index % 2 === 0 ? "md:pr-8" : "md:pl-8"
-                      }`}
+                  {/* Content with Animation */}
+                  <motion.div
+                    initial={{ opacity: 0, scale: 0.9, x: index % 2 === 0 ? -20 : 20 }}
+                    whileInView={{ opacity: 1, scale: 1, x: 0 }}
+                    viewport={{ once: true, margin: "-100px" }}
+                    transition={{ duration: 0.5, delay: index * 0.1, ease: "easeOut" }}
+                    className={cn(
+                      "ml-16 md:ml-0 md:w-[calc(50%-2rem)]",
+                      index % 2 === 0 ? "md:pr-8" : "md:pl-8"
+                    )}
                   >
                     <div className="bg-card border border-border rounded-xl p-6 hover:border-primary/50 transition-all duration-300 hover:shadow-lg hover:shadow-primary/5">
                       <div className="flex items-center justify-between mb-3">
                         <span className="text-sm font-semibold text-primary bg-primary/10 px-3 py-1 rounded-full">
                           {exp.period}
                         </span>
-                        <Badge variant="outline" className={`text-xs ${colorClass}`}>
+                        <Badge variant="outline" className={cn("text-xs", colorClass)}>
                           {exp.type === "work" ? "Work" : exp.type === "education" ? "Education" : "Achievement"}
                         </Badge>
                       </div>
@@ -134,7 +146,7 @@ export function Experience() {
                         ))}
                       </div>
                     </div>
-                  </div>
+                  </motion.div>
 
                   {/* Spacer for alternating layout */}
                   <div className="hidden md:block md:w-[calc(50%-2rem)]" />

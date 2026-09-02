@@ -21,7 +21,7 @@ export function Header() {
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-8">
         <Link href="/" className="text-xl font-bold text-foreground">
-          <span className="text-primary">Portfolio</span>
+          <span className="text-primary">HSY</span>
         </Link>
 
         {/* Desktop navigation */}
@@ -35,9 +35,9 @@ export function Header() {
               {item.name}
             </Link>
           ))}
-          <Button asChild>
-            <Link href="#contact">Get in Touch</Link>
-          </Button>
+            <Button asChild>
+              <Link href="#contact">Contact Me</Link>
+            </Button>
         </div>
 
         {/* Mobile menu button */}
@@ -66,7 +66,7 @@ export function Header() {
             ))}
             <Button asChild className="w-full">
               <Link href="#contact" onClick={() => setMobileMenuOpen(false)}>
-                Get in Touch
+                Contact Me
               </Link>
             </Button>
           </div>
