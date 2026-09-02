@@ -31,10 +31,10 @@ const projects = [
     tags: ["Next.js", "React", "TypeScript", "Tailwind CSS", "CoinGecko API"],
     github: "https://github.com/iamHimanshu-07/Yugen",
     live: "https://yugen-x.vercel.app",
-    image: "/images/yugen.png",
+    image: "https://images.unsplash.com/photo-1639762681485-0743fed56604?q=80&w=800&auto=format&fit=crop",
   },
   {
-    title: "MindPulse.AI - Mental Health Analyzer",
+    title: "MindPulse - AI-Mental Health Analyzer",
     description:
       "An end-to-end NLP project for multi-label mental-health emotion detection from free-form text. Uses TF-IDF + OneVsRest RandomForest on the DepressionEmo dataset, served through an interactive Streamlit dashboard with per-emotion probability charts.",
     tags: ["Python", "NLP", "Scikit-Learn", "Streamlit", "TF-IDF", "RandomForest"],
