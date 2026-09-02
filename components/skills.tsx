@@ -243,11 +243,9 @@ export function Skills() {
                     )}
                   />
                 </button>
-
                 {isOpen && (
                   <div id={`skills-${group.id}`} className="px-6 pb-6 space-y-4">
                     <p className="text-sm text-muted-foreground">{group.description}</p>
-
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
                       {group.skills.map((skill) => {
                         const tier = classForSkill(skill.name)
@@ -286,35 +284,6 @@ export function Skills() {
               </div>
             )
           })}
-        </div>
-
-        {/* Resume-ready summary */}
-        <div className="mt-12 mx-auto max-w-4xl">
-          <div className="bg-card border border-border rounded-xl p-6">
-            <div className="flex items-center gap-2 mb-3">
-              <BarChart3 className="h-4 w-4 text-primary" />
-              <h3 className="text-sm font-semibold uppercase tracking-wider text-foreground">
-                Resume-ready summary
-              </h3>
-            </div>
-            <p className="text-sm text-muted-foreground leading-relaxed">
-              <span className="font-semibold text-foreground">Languages:</span> Python, TypeScript,
-              SQL
-              <br />
-              <span className="font-semibold text-foreground">AI/ML/NLP:</span> Scikit-Learn, Pandas,
-              NumPy, NLTK, Imbalanced-learn · TF-IDF, Multi-label Classification, Collaborative
-              Filtering, Model Evaluation (Precision/Recall/F1)
-              <br />
-              <span className="font-semibold text-foreground">Backend:</span> Flask, Node.js,
-              Express, REST APIs, WebSockets, JWT, SQLite, Gunicorn
-              <br />
-              <span className="font-semibold text-foreground">Frontend:</span> React 19, Next.js 16,
-              Tailwind CSS, shadcn/ui, Apache ECharts, Leaflet
-              <br />
-              <span className="font-semibold text-foreground">Cloud/Tools:</span> Vercel, Git, GitHub,
-              Render, VS Code, Streamlit
-            </p>
-          </div>
         </div>
       </div>
     </section>
