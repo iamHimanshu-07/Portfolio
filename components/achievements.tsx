@@ -4,7 +4,7 @@ import { Badge } from "@/components/ui/badge"
 const achievements = [
   {
     icon: Zap,
-    title: "SSIP Participant - 2025",
+    title: "SSIP - 2025",
     subtitle: "Student Startup & Innovation Policy",
     description:
       "Selected under SSIP at P P Savani University for developing an AI-powered Crop Yield Prediction System. Built an ML model using soil, weather, and fertilizer data to support data-driven agricultural decisions for farmers.",

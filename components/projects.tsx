@@ -31,7 +31,7 @@ const projects = [
     tags: ["Next.js", "React", "TypeScript", "Tailwind CSS", "CoinGecko API"],
     github: "https://github.com/iamHimanshu-07/Yugen",
     live: "https://yugen-x.vercel.app",
-    image: "https://images.unsplash.com/photo-1639762681485-0743fed56604?q=80&w=800&auto=format&fit=crop",
+    image: "/images/yugen.png",
   },
   {
     title: "MindPulse - AI-Mental Health Analyzer",
@@ -40,7 +40,7 @@ const projects = [
     tags: ["Python", "NLP", "Scikit-Learn", "Streamlit", "TF-IDF", "RandomForest"],
     github: "https://github.com/iamHimanshu-07/MindPulse.AI",
     live: "http://mindpulseai.streamlit.app",
-    image: "/images/mental-health.png",
+    image: "/images/mental-health.jpg",
   },
   {
     title: "VoiceFlow - Speech Recognition App",

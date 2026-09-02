@@ -16,15 +16,6 @@ const experiences = [
     skills: ["Python", "Machine Learning", "NLP", "Scikit-Learn"],
   },
   {
-    period: "2025",
-    title: "SSIP Participant",
-    company: "Student Startup & Innovation Policy",
-    type: "achievement",
-    description:
-      "Selected under SSIP at P P Savani University for developing an AI-powered Crop Yield Prediction System using ML on soil, weather & fertilizer data to support data-driven agricultural decisions.",
-    skills: ["Machine Learning", "Data Science", "Agriculture Tech"],
-  },
-  {
     period: "2023 - Present",
     title: "B.Tech - AI & Machine Learning",
     company: "P P Savani University, Kosamba, Gujarat",
